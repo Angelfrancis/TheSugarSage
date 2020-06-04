@@ -94,14 +94,14 @@ $(document).ready(function()
 		$('#playing').css('bottom','18%');
 						$('#desc > img').attr('id','mic');
 
-		$('#desc > img').css('height',$(window).height()*65/100+"px");
+		$('#desc > img').css('width',$(window).width()*95/100+"px");
 }
 		else{
 		$('#playing').css('bottom','25%');	
 		$('#desc > img').attr('src','mic2.svg');
 				$('#desc > img').attr('id','mic2');
 
-				$('#desc > img').css('height',$(window).height()*65/100+"px");
+				$('#desc > img').css('height',$(window).height()*70/100+"px");
 
 		}});
 $(window).resize(function()
