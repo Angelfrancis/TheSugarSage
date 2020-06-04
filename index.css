@@ -28,7 +28,6 @@ word-spacing: 0px; }
 body
 {
 	background-image: linear-gradient(to right,#13547a,#80d0c7);
-	background-repeat-x:no-repeat;
 	background-size:110% 100%;
 }
 audio
