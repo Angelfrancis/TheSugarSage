@@ -17,7 +17,6 @@ body
 #menu
 {
 	background-color:  rgba(220,220,220,0.4);
-width: 106%;
 	height: 50px;
 padding-top: 20px;
 font-family: "Arial Rounded MT Bold",Arial;
@@ -29,7 +28,6 @@ word-spacing: 0px; }
 body
 {
 	background-image: linear-gradient(to right,#13547a,#80d0c7);
-	background-size:151% 100%;
 }
 audio
 {
@@ -73,7 +71,7 @@ display: none;
 #listbutton
 {
 	position: absolute;
-	right: -15px;
+	right: 15px;
 	top: 25px;
 }
 #underline
