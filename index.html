@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Sugar Sage</title>
+<link rel="stylesheet" type="text/css" href="index.css"><link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Coiny&family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+<link rel="icon"  href="file:///D:/ANGEL/web%20demo/thesugarsage/profile.jpg">
+</head>
+<body>
+			<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<div id="underline"></div>
+
+<div id="menu">
+	<p id="home">Home</p>
+	<p id="about" onclick="alert('Coming soon');">About</p>
+	<p id="writeto" onclick="alert('Coming soon');">Write To</p>
+	
+</div>
+<!-- <img src="profile.jpg" width="50"><p>Follow</p> -->
+<audio id="audio" class='1' src="1a.mp3" onended="$('#e').click();" ontimeupdate="playing(this);"  ></audio>
+<div id="controls">
+<div id="playing"><div id="lp"></div></div>
+<img id="play" class="control" src="play.png" onclick="var x=getElementById('audio');play(x);"><img id="previous" class="control" src="previous.png" onclick="previous();"><img id="next" class="control" src="next.png" onclick="next();">
+<img id="forward"  class="control"src="forward.png" onclick="forward();"><img id="backward"  class="control"src="backward.png" onclick="backward();"></div>
+<img id="listbutton" src="menu.png" width="50" onclick="$('#list').toggle();">
+<div id="desc"><img src="mic.svg" id="mic"></div>
+<div id="list" >
+</div>
+<p id="1" style="display: none;">Episode-1 <br><span style="color: pink;">SELF LOVE</span></p>
+<p id="2" style="display: none;">Episode-2 <br><span style="color: pink;">PROBLEMS</span></p>
+<p id="3" style="display: none;">Episode-4 Part-1  <br><span style="color: pink;">SCHOOL MEMORIES</span></p>
+<p id="4" style="display: none;">Episode-4 Part-2 <br><span style="color: pink;">SCHOOL MEMORIES</span></p>
+<p id="5" style="display: none;">Episode-5<br><span style="color: pink;">LONLINESS</span></p>
+<p id="6" style="display: none;">Episode-6 <br><span style="color: pink;">DIARY OF MIDDLE CLASS PERSON</span></p>
+<p id="7" style="display: none;">Episode-7 <br><span style="color: pink;">HEARTBREAKS</span></p>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
