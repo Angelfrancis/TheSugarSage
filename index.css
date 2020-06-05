@@ -127,13 +127,15 @@ display: none;
 	bottom: 25%;
 	left: 30%;
 	width: 44%;
-	height: 4px;
-	background-color: red;
+	height: 5px;
+	background-color: transparent;
+	box-shadow: 0 0 2px #fff, 0 0 3px #3dff71, 0 0 4px #3dff71, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71;
+align-self: center;
 }
 #playing div
 {
 	width: 0px;
-	height: 4px;
+	height: 5px;
 	font-size: 1px;
 	background-color: white;
 }
