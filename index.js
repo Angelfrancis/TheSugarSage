@@ -90,6 +90,8 @@ $('#writeto').mousemove(function()
 });
 $(document).ready(function()
 	{
+	$('#loader').css('width',"0px");
+		$('#loader').css('height',"0px");
 		if($(window).width()<1000){
 		$('#playing').css('bottom','18%');
 						$('#desc > img').attr('id','mic');
