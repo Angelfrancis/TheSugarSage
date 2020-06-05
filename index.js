@@ -104,9 +104,24 @@ $(document).ready(function()
 				$('#desc > img').css('height',$(window).height()*70/100+"px");
 
 		}});
+$(window).ready(function()
+	{ 
+		$('#loader').css('width',$(window).width()+"px");
+		$('#loader').css('height',$(window).height()+"px");
+		setTimeout(function(){
+			$('#loader').css('opacity','0%');
+			$('#loader').css('z-index','-1');
+		},1000);
+	});
 $(window).resize(function()
 	{
 		if($(window).width()<1000)
 		$('#playing').css('bottom','18%');
 		else
-		$('#playing').css('bottom','25%');	});
+		$('#playing').css('bottom','25%');	
+});
+$(window).load(function()
+{
+$('#loader').css('width',$(window).width()+"px");
+		$('#loader').css('height',$(window).height()+"px");
+	});
