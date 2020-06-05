@@ -111,7 +111,8 @@ $(window).ready(function()
 		setTimeout(function(){
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
-		},1000);
+$('#loader').css('width',"0px");
+		$('#loader').css('height',"0px");		},1000);
 	});
 $(window).resize(function()
 	{
