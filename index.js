@@ -1,3 +1,13 @@
+$('#loader > img').css('width',$(window).width()*95/100+'px');
+if($(window).width()<1000){
+		$('#loader > img').css('width',$(window).width()*95/100+'px');
+
+}
+		else{
+			$('#loader > img').css('width',$(window).width()*95/100+'px');
+
+		}
+
 function play(x)
 {
 if(x.paused)
@@ -14,6 +24,7 @@ c=0
 $('#audio').attr('src',parseInt(c)+1+'a.mp3');
 $('#audio').attr('class',parseInt(c)+1);
 $('#play').attr('src','pause.png');
+$('#desc > img').attr('src',parseInt(c)+1+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
@@ -24,6 +35,7 @@ c=9
 $('#audio').attr('src',parseInt(c)-1+'a.mp3');
 $('#audio').attr('class',parseInt(c)-1);
 $('#play').attr('src','pause.png');
+$('#desc > img').attr('src',parseInt(c)-1+'.jpg');
 var x=$('#audio')[0];
 x.play();
 
@@ -57,6 +69,7 @@ function change(x)
 $('#audio').attr('src',i+'a.mp3');
 $('#audio').attr('class',i);
 $('#play').attr('src','pause.png');
+$('#desc > img').attr('src',i+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
@@ -90,21 +103,16 @@ $('#writeto').mousemove(function()
 });
 $(document).ready(function()
 	{
-	$('#loader').css('width',"0px");
-		$('#loader').css('height',"0px");
 		if($(window).width()<1000){
 		$('#playing').css('bottom','18%');
-						$('#desc > img').attr('id','mic');
 
-		$('#desc > img').css('width',$(window).width()*95/100+"px");
+		$('#desc > img').css('width',$(window).width()*60/100+"px");
 }
 		else{
 		$('#playing').css('bottom','25%');	
-		$('#desc > img').attr('src','mic2.svg');
-				$('#desc > img').attr('id','mic2');
 
-				$('#desc > img').css('height',$(window).height()*70/100+"px");
-
+				$('#desc > img').css('height',$(window).height()*40/100+"px");
+				$('#desc > img').css('width',$(window).width()*10/100+"px");
 		}});
 $(window).ready(function()
 	{ 
@@ -113,8 +121,7 @@ $(window).ready(function()
 		setTimeout(function(){
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
-$('#loader').css('width',"0px");
-		$('#loader').css('height',"0px");		},1000);
+		},1000);
 	});
 $(window).resize(function()
 	{
