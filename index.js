@@ -4,7 +4,7 @@ if($(window).width()<1000){
 
 }
 		else{
-			$('#loader > img').css('width',$(window).width()*95/100+'px');
+			$('#loader > img').css('width',$(window).width()*0/100+'px');
 
 		}
 
