@@ -24,7 +24,8 @@ body
 	height: 50px;
 padding-top: 20px;
 font-family: "Arial Rounded MT Bold",Arial;
-word-spacing: 0px; }
+word-spacing: 0px; 
+text-align:left;}
 #menu p:hover
 {
 	text-shadow: 0 0 4px #fff, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71, 0 0 9px #3dff71, 0 0 10px #3dff71;
