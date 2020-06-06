@@ -1,0 +1,527 @@
+
+#loader{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+background-color: rgba(220,220,220,0.5);
+z-index: 4;
+transition: opacity 1s;
+text-align: center;
+vertical-align: center;
+};
+#loader img
+{
+	position: absolute;
+	left: 50%;
+}
+#loader div
+{
+	position: fixed;
+	top: 45%;
+		border-radius: 50%;
+
+	width: 10px;
+
+}
+#loader div:nth-child(1)
+{
+	left: 10%;
+	height: 10%;
+	background-color: black;
+	animation-name: div1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(2)
+{
+	left: 12%;
+	height: 10%;
+	background-color: black;
+	animation-name: div2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(3)
+{
+	left: 14%;
+	height: 10%;
+	background-color: black;
+	animation-name: div3;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(4)
+{
+	left: 16%;
+	height: 10%;
+	background-color: black;
+	animation-name: div4;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(5)
+{
+	left: 18%;
+	height: 10%;
+	background-color: black;
+	animation-name: div5;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+}
+#loader div:nth-child(6)
+{
+	left: 20%;
+	height: 10%;
+	background-color: black;
+	animation-name: div6;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(7)
+{
+	left: 22%;
+	height: 10%;
+	background-color: black;
+	animation-name: div7;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(8)
+{
+	left: 24%;
+	height: 10%;
+	background-color: black;
+	animation-name: div8;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(9)
+{
+	left: 26%;
+	height: 10%;
+	background-color: black;
+	animation-name: div9;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(10)
+{
+	left: 28%;
+	height: 10%;
+	background-color: black;
+	animation-name: div10;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(11)
+{
+	left: 30%;
+	height: 10%;
+	background-color: black;
+	animation-name: div1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(12)
+{
+	left: 32%;
+	height: 10%;
+	background-color: black;
+	animation-name: div2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(13)
+{
+	left: 34%;
+	height: 10%;
+	background-color: black;
+	animation-name: div3;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}#loader div:nth-child(14)
+{
+	left: 36%;
+	height: 10%;
+	background-color: black;
+	animation-name: div4;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(15)
+{
+	left: 38%;
+	height: 10%;
+	background-color: black;
+	animation-name: div5;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(16)
+{
+	left: 40%;
+	height: 10%;
+	background-color: black;
+	animation-name: div6;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+#loader div:nth-child(17)
+{
+	left: 42%;
+	height: 10%;
+	background-color: black;
+	animation-name: div7;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+#loader div:nth-child(18)
+{
+	left: 44%;
+	height: 10%;
+	background-color: black;
+	animation-name: div8;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(19)
+{
+	left: 46%;
+	height: 10%;
+	background-color: black;
+	animation-name: div9;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(20)
+{
+	left: 48%;
+	height: 10%;
+	background-color: black;
+	animation-name: div10;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(21)
+{
+	left: 50%;
+	height: 10%;
+	background-color: black;
+	animation-name: div1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(22)
+{
+	left: 52%;
+	height: 10%;
+	background-color: black;
+	animation-name: div2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(23)
+{
+	left: 54%;
+	height: 10%;
+	background-color: black;
+	animation-name: div3;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(24)
+{
+	left: 56%;
+	height: 10%;
+	background-color: black;
+	animation-name: div4;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(25)
+{
+	left: 58%;
+	height: 10%;
+	background-color: black;
+	animation-name: div5;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+#loader div:nth-child(26)
+{
+	left: 60%;
+	height: 10%;
+	background-color: black;
+	animation-name: div6;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(27)
+{
+	left: 62%;
+	height: 10%;
+	background-color: black;
+	animation-name: div7;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(28)
+{
+	left: 64%;
+	height: 10%;
+	background-color: black;
+	animation-name: div8;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(29)
+{
+	left: 66%;
+	height: 10%;
+	background-color: black;
+	animation-name: div9;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(30)
+{
+	left: 68%;
+	height: 10%;
+	background-color: black;
+	animation-name: div10;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(31)
+{
+	left: 70%;
+	height: 10%;
+	background-color: black;
+	animation-name: div1;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+}
+
+#loader div:nth-child(32)
+{
+	left: 72%;
+	height: 10%;
+	background-color: black;
+	animation-name: div2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(33)
+{
+	left: 74%;
+	height: 10%;
+	background-color: black;
+	animation-name: div3;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(34)
+{
+	left: 76%;
+	height: 10%;
+	background-color: black;
+	animation-name: div4;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(35)
+{
+	left: 78%;
+	height: 10%;
+	background-color: black;
+	animation-name: div5;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(36)
+{
+	left: 80%;
+	height: 10%;
+	background-color: black;
+	animation-name: div6;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(37)
+{
+	left: 82%;
+	height: 10%;
+	background-color: black;
+	animation-name: div7;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(38)
+{
+	left: 84%;
+	height: 10%;
+	background-color: black;
+	animation-name: div8;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(39)
+{
+	left: 86%;
+	height: 10%;
+	background-color: black;
+	animation-name: div9;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#loader div:nth-child(40)
+{
+	left: 88%;
+	transform: flip();
+	background-color: black;
+	height: 10%;
+	animation-name: div10;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes div7
+{
+	0%{transform: rotateX(0deg);}
+	10%{transform: rotateX(20deg);}
+	20%{transform: rotateX(40deg);}
+	30%{transform: rotateX(60deg);}
+	40%{transform: rotateX(80deg);}
+	50%{transform: rotateX(90deg);}
+	60%{transform: rotateX(60deg);}
+	70%{transform: rotateX(40deg);}
+	80%{transform: rotateX(20deg);}
+	90%{transform: rotateX(10deg);}
+
+}
+@keyframes div4
+{10%{transform: rotateX(0deg);}
+20%{transform: rotateX(20deg);}
+30%{transform: rotateX(40deg);}
+40%{transform: rotateX(60deg);}
+50%{transform: rotateX(80deg);}
+60%{transform: rotateX(90deg);}
+70%{transform: rotateX(60deg);}
+80%{transform: rotateX(40deg);}
+90%{transform: rotateX(20deg);}
+0%{transform: rotateX(10deg);}
+}
+@keyframes div1
+{
+	20%{transform: rotateX(0deg);}
+	30%{transform: rotateX(20deg);}
+	40%{transform: rotateX(40deg);}
+	50%{transform: rotateX(60deg);}
+	60%{transform: rotateX(80deg);}
+	70%{transform: rotateX(90deg);}
+	80%{transform: rotateX(60deg);}
+	90%{transform: rotateX(40deg);}
+	0%{transform: rotateX(20deg);}
+	10%{transform: rotateX(10deg);}
+
+}
+@keyframes div5
+{
+	30%{transform: rotateX(0deg);}
+	40%{transform: rotateX(20deg);}
+	50%{transform: rotateX(40deg);}
+	60%{transform: rotateX(60deg);}
+	70%{transform: rotateX(80deg);}
+	80%{transform: rotateX(90deg);}
+	90%{transform: rotateX(60deg);}
+	0%{transform: rotateX(40deg);}
+	10%{transform: rotateX(20deg);}
+	20%{transform: rotateX(10deg);}
+
+}
+@keyframes div2
+{
+	40%{transform: rotateX(0deg);}
+	50%{transform: rotateX(20deg);}
+	60%{transform: rotateX(40deg);}
+	70%{transform: rotateX(60deg);}
+	80%{transform: rotateX(80deg);}
+	90%{transform: rotateX(90deg);}
+	0%{transform: rotateX(60deg);}
+	10%{transform: rotateX(40deg);}
+	20%{transform: rotateX(20deg);}
+	30%{transform: rotateX(10deg);}
+
+}
+@keyframes div9
+{
+	50%{transform: rotateX(0deg);}
+	60%{transform: rotateX(20deg);}
+	70%{transform: rotateX(40deg);}
+	80%{transform: rotateX(60deg);}
+	90%{transform: rotateX(80deg);}
+	0%{transform: rotateX(90deg);}
+	10%{transform: rotateX(60deg);}
+	20%{transform: rotateX(40deg);}
+	30%{transform: rotateX(20deg);}
+	40%{transform: rotateX(10deg);}
+
+}
+@keyframes div3
+{
+	60%{transform: rotateX(0deg);}
+	70%{transform: rotateX(20deg);}
+	80%{transform: rotateX(40deg);}
+	90%{transform: rotateX(60deg);}
+	0%{transform: rotateX(80deg);}
+	10%{transform: rotateX(90deg);}
+	20%{transform: rotateX(60deg);}
+	30%{transform: rotateX(40deg);}
+	40%{transform: rotateX(20deg);}
+	50%{transform: rotateX(10deg);}
+}
+@keyframes div10
+{
+	70%{transform: rotateX(0deg);}
+	80%{transform: rotateX(20deg);}
+	90%{transform: rotateX(40deg);}
+	0%{transform: rotateX(60deg);}
+	10%{transform: rotateX(80deg);}
+	20%{transform: rotateX(90deg);}
+	30%{transform: rotateX(60deg);}
+	40%{transform: rotateX(40deg);}
+	50%{transform: rotateX(20deg);}
+	60%{transform: rotateX(10deg);}
+
+}
+@keyframes div6
+{
+	80%{transform: rotateX(0deg);}
+	90%{transform: rotateX(20deg);}
+	0%{transform: rotateX(40deg);}
+	10%{transform: rotateX(60deg);}
+	20%{transform: rotateX(80deg);}
+	30%{transform: rotateX(90deg);}
+	40%{transform: rotateX(60deg);}
+	50%{transform: rotateX(40deg);}
+	60%{transform: rotateX(20deg);}
+	70%{transform: rotateX(10deg);}
+
+}
+@keyframes div8
+{
+	90%{transform: rotateX(0deg);}
+	0%{transform: rotateX(20deg);}
+	10%{transform: rotateX(40deg);}
+	20%{transform: rotateX(60deg);}
+	30%{transform: rotateX(80deg);}
+	40%{transform: rotateX(90deg);}
+	50%{transform: rotateX(60deg);}
+	60%{transform: rotateX(40deg);}
+	70%{transform: rotateX(20deg);}
+	80%{transform: rotateX(10deg);}
+}
