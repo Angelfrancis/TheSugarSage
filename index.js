@@ -121,10 +121,11 @@ $(window).ready(function()
 		setTimeout(function(){
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
-		$('#loader').remove();
 			
 		},5000);
-		$('#loader').remove();
+			setTimeout(function(){
+		$('#loader').remove();		},300);
+
 	});
 $(window).resize(function()
 	{
