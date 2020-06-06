@@ -124,7 +124,7 @@ $(window).ready(function()
 			
 		},5000);
 			setTimeout(function(){
-		$('#loader').remove();		},300);
+		$('#loader').remove();		},5300);
 
 	});
 $(window).resize(function()
