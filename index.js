@@ -122,6 +122,7 @@ $(window).ready(function()
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
 		},5000);
+		$('#loader').remove();
 	});
 $(window).resize(function()
 	{
