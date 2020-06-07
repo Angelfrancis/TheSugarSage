@@ -73,6 +73,9 @@ function backward()
 
 $(document).ready(function()
 	{
+	setTimeout(function(){
+			$('#loader').remove();
+		},5000);
 		if($(window).width()<1000){
 				$('#playing').css('bottom','18%');
 				$('#desc > img').css('width',$(window).width()*60/100+"px");
@@ -102,9 +105,7 @@ $('#desc > img').attr('src',i+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
-$('body').mousemove(function(){
-$('#loader').remove();
-});
+
 function mouseover(x)
 	{
 	var i=parseInt(x.id);
