@@ -12,9 +12,7 @@ $(window).on("load",function()
 	{setTimeout(function(){
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
-	
-		},5000);
-	);
+		},5000);	});
 
 
 
@@ -74,7 +72,10 @@ function backward()
 
 $(document).ready(function()
 	{
-	
+		setTimeout(function()
+			{
+				$('#loader').remove();
+			},5200);
 		if($(window).width()<1000){
 				$('#playing').css('bottom','18%');
 				$('#desc > img').css('width',$(window).width()*60/100+"px");
@@ -104,6 +105,7 @@ $('#desc > img').attr('src',i+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
+
 
 function mouseover(x)
 	{
