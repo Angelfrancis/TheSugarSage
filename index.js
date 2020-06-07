@@ -12,7 +12,10 @@ $(window).on("load",function()
 	{setTimeout(function(){
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
-		},5000);	});
+		},5000);
+	setTimeout(function(){
+			$('#loader').remove();
+		},5300);});
 
 
 
