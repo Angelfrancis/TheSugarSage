@@ -4,6 +4,7 @@ body
 	background-image: linear-gradient(to right,#13547a,#80d0c7);
 	background-size: 110% 100%;
 	text-align: center;
+	z-index:1;
 
 }
 #menu p,#menu a
