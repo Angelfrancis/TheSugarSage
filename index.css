@@ -6,7 +6,7 @@ body
 	text-align: center;
 
 }
-#menu p
+#menu p,#menu a
 {
 	display: inline;
 	padding-left: 10px;
@@ -20,12 +20,12 @@ body
 }
 #menu
 {
-	background-color:  rgba(220,220,220,0.4);
+	background-image: linear-gradient(to right,rgba(220,220,220,0.8),rgba(220,220,220,0.4),transparent);
 	height: 50px;
 padding-top: 20px;
 font-family: "Arial Rounded MT Bold",Arial;
 word-spacing: 0px; 
-text-align:left;}
+text-align: left;}
 #menu p:hover
 {
 	text-shadow: 0 0 4px #fff, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71, 0 0 9px #3dff71, 0 0 10px #3dff71;
@@ -77,7 +77,7 @@ display: none;
 }
 #underline
 { 	
-	position: fixed;
+	position: absolute;
 	top:70px;
 	height: 2px;
 	left:18px;
@@ -133,6 +133,8 @@ display: none;
 	background-color: transparent;
 	box-shadow: 0 0 2px #fff, 0 0 3px #3dff71, 0 0 4px #3dff71, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71;
 align-self: center;
+border: 0px solid white;
+border-radius: 90px;
 }
 #playing div
 {
@@ -194,3 +196,13 @@ vertical-align: center;
 	width: 10px;
 
 }
+#aboutdiv h1
+{
+font-size: 40px;
+background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(255,255,255,0.5));
+height: 90%;
+margin-left: 10%;
+margin-right: 10%;
+border-bottom:0px solid white;
+border-bottom-left-radius:  90px;
+border-bottom-right-radius: 90px;}
