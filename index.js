@@ -29,7 +29,7 @@ $('#play').attr('src','play.png');}
 
 function next(){
 var c=$('#audio').attr('class');
-if(c=='9')
+if(c=='10')
 c=0
 $('#audio').attr('src',parseInt(c)+1+'a.mp3');
 $('#audio').attr('class',parseInt(c)+1);
@@ -43,7 +43,7 @@ x.play();
 function previous(){
 var c=$('#audio').attr('class');
 if(c=='1')
-c=10
+c=11
 $('#audio').attr('src',parseInt(c)-1+'a.mp3');
 $('#audio').attr('class',parseInt(c)-1);
 $('#play').attr('src','pause.png');
@@ -86,7 +86,7 @@ $(document).ready(function()
 				$('#desc > img').css('width',$(window).width()*10/100+"px");
 		}
 		var top=50;
-		for(i=1;i<=9;i++)
+		for(i=1;i<=10;i++)
 		{
 			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="'+i+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">'+$('#'+i).html()+'</p></div>');
 			top=top+250;
