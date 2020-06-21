@@ -6,7 +6,7 @@ else
 var homed="";
 var aboutd="";
 var homev=0;
-var total='11'
+var total='12'
 
 $(window).on("load",function()
 	{setTimeout(function(){
@@ -86,7 +86,7 @@ $(document).ready(function()
 				$('#desc > img').css('width',$(window).width()*10/100+"px");
 		}
 		var top=50;
-		for(i=1;i<=total;i++)
+		for(i=1;i<=parseInt(total);i++)
 		{
 			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="'+i+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">'+$('#'+i).html()+'</p></div>');
 			top=top+250;
