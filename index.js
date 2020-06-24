@@ -6,7 +6,7 @@ else
 var homed="";
 var aboutd="";
 var homev=0;
-var total='13'
+var total='14'
 
 $(window).on("load",function()
 	{setTimeout(function(){
