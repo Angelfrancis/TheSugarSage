@@ -11,7 +11,7 @@ const listOriginal=[
 {
 	header:"1",
 	title:"Self Love",
-	img:"Self-Love"
+	img:"self-love"
 },
 {
 	header:"2",
