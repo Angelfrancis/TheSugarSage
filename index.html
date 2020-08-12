@@ -4,9 +4,11 @@
 	<title>The Sugar Sage</title>
 	<meta name="google-site-verification" content="2Wu_7xypI28UuNTaBkFbtZK_AbVa1y0VcGXk5yBBXdM" />
 	<meta charset="UTF-8">
+
   <meta name="description" content="Rj jessy Podcast The sugar sage">
   <meta name="keywords" content="Podcast,Rj jessy	, The sugar sage,sugar sage">
   <meta name="author" content="John Doe">
+
 	<link rel="stylesheet" type="text/css" href="loader.css">
 
 <link rel="icon"  href="profile.jpg">
@@ -17,6 +19,8 @@
     <p>Podcasts by RJ jessy</p>
     <p>Random கருத்து</p>
   </header>
+    <input type="checkbox" style="display: none"  id="shuffle" name="vehicle1" value="Bike">
+
 	<div id="loader" ><img style="position: relative;top: 8%;" src="loader.svg">
 		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
 		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
@@ -32,33 +36,22 @@
 	<a id="writeto" href='https://www.sarahah.com/messages/user/f1fcbb5d-2136-48aa-9cd6-d6f6320a81a9'>Write To</a>
 	
 </div>
-<audio id="audio" class='1' src="1a.mp3" onended="next();" ontimeupdate="playing(this);"  ></audio>
+<audio id="audio" class='0' src="audio/self-love.mp3" onended="next();" ontimeupdate="playing(this);"  ></audio>
 <div id="homediv" >
 <div id="controls">
 <div id="playing"><div id="lp"></div></div>
-<img id="play" class="control" src="play.png" onclick="var x=getElementById('audio');play(x);"><img id="previous" class="control" src="previous.png" onclick="previous();"><img id="next" class="control" src="next.png" onclick="next();">
-<img id="forward"  class="control"src="forward.png" onclick="forward();"><img id="backward"  class="control"src="backward.png" onclick="backward();"></div>
+<div id="controlinner">
+<img id="previous" class="control" src="previous.png" onclick="previous();">
+<img id="backward"  class="control"src="backward.png" onclick="backward();">
+<img id="play" class="control" src="play.png" onclick="var x=getElementById('audio');play(x);">
+<img id="shuffle-btn"  class="control"src="shuffle.png" onclick="$('#shuffle').click();" >
+<img id="forward"  class="control"src="forward.png" onclick="forward();">
+<img id="next" class="control" src="next.png" onclick="next();">
+</div></div>
 <img id="listbutton" src="menu.png" width="50" onclick="$('#list').toggle();">
-<div id="desc"><img src="1.jpg" id="main" width="500"></div>
+<div id="desc"><img src="image/self-love.jpg" id="main" width="500"></div>
 <div id="list" >
 </div>
-<p id="1" style="display: none;">Episode-1 <br><span style="color: pink;">SELF LOVE</span></p>
-<p id="2" style="display: none;">Episode-2 <br><span style="color: pink;">PROBLEMS</span></p>
-<p id="3" style="display: none;">Episode-4 Part-1  <br><span style="color: pink;">SCHOOL MEMORIES</span></p>
-<p id="4" style="display: none;">Episode-4 Part-2 <br><span style="color: pink;">SCHOOL MEMORIES</span></p>
-<p id="5" style="display: none;">Episode-5<br><span style="color: pink;">LONLINESS</span></p>
-<p id="6" style="display: none;">Episode-6 <br><span style="color: pink;">DIARY OF MIDDLE CLASS PERSON</span></p>
-<p id="7" style="display: none;">Episode-7 <br><span style="color: pink;">HEARTBREAKS</span></p>
-<p id="8" style="display: none;">Episode-8 <br><span style="color: pink;">FRIENDSHIP</span></p>
-<p id="9" style="display: none;">Episode-9 <br><span style="color: pink;">THAT STRONG PERSON</span></p>
-<p id="10" style="display: none;">Episode-10 Part-1<br><span style="color: pink;">DEPRESSION</span></p>
-<p id="11" style="display: none;">Episode-10 Part-2<br><span style="color: pink;">DEPRESSION</span></p>
-<p id="12" style="display: none;">Episode-10 Part-3<br><span style="color: pink;">DEPRESSION</span></p>
-<p id="13" style="display: none;">Episode-11 <br><span style="color: pink;">UNREALISTIC EXPECTATIONS</span></p>
-<p id="14" style="display: none;">Episode-12 <br><span style="color: pink;">DEATH OF A LOVED ONE</span></p>
-<p id="15" style="display: none;">Episode-13 <br><span style="color: pink;">LIFE</span></p>
-<p id="16" style="display: none;">Episode-14 <br><span style="color: pink;">ONE SIDE LOVE</span></p>
-<p id="17" style="display: none;">Episode-15 <br><span style="color: pink;">HATERS</span></p>
 
 <div id="Follow"><img src="profile.jpg" width="100" ><a href="https://www.instagram.com/the_sugar_sage/?hl=en">Follow</a></div>
 </div>

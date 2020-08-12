@@ -7,13 +7,137 @@ var homed="";
 var aboutd="";
 var homev=0;
 var total='17'
+const listOriginal=[
+{
+	header:"1",
+	title:"Self Love",
+	img:"Self-Love"
+},
+{
+	header:"2",
+	title:"PROBLEMS",
+	img:"problems"
+},
+{
 
+	header:"4 Part-1",
+	title:"SCHOOL MEMORIES",
+	img:"school-memories1"
+},
+{
+	header:"4 Part-2",
+	title:"SCHOOL MEMORIES",
+	img:"school-memories2"
+},
+{
+	header:"5",
+	title:"lonliness",
+	img:"lonliness"
+},
+{
+	header:"6",
+	title:"diary of middle class person",
+	img:"diary-of-middle-class"
+},
+{
+	header:"7",
+	title:"heartbreaks",
+	img:"heartbreaks"
+},
+{
+	header:"8",
+	title:"friendship",
+	img:'friendship'
+},
+{
+	header:'9',
+	title:"that strong person",
+	img:'strong-person'
+},
+{
+	header:'10 Part-1',
+	title:"depression",
+	img:'depression1'
+},
+{
+	header:'10 Part-2',
+	title:"depression",
+	img:'depression2'
+},
+{
+	header:'10 Part-3',
+	title:"depression",
+	img:'depression3'
+},
+{
+	header:'11',
+	title:"unrealistic expectations",
+	img:'unrealistic-expectations'
+},
+{
+	header:'12',
+	title:"death of a loved one",
+	img:'death-of-a-loved-one'
+},
+{
+	header:'13',
+	title:"life",
+	img:'life'
+},
+{
+	header:'14',
+	title:"one sided love",
+	img:'one-side-love'
+},
+{
+	header:'15',
+	title:"haters",
+	img:'haters'
+}
+]
+var list=Object.assign({},listOriginal);
+var listshuffle=Object.assign({},listOriginal);
 $(window).on("load",function()
 	{setTimeout(function(){
 			$('#loader').css('opacity','0%');
 			$('#loader').css('z-index','-1');
 		},5000);	});
+function shuffle()
+{
+	var count=listOriginal.length;
+	var listindex, temp;
+	while(count>0)
+	{
+		listindex=Math.floor(Math.random()*listOriginal.length);
+		count--;
+		temp=listshuffle[count];
+		listshuffle[count]=listshuffle[listindex];
+		listshuffle[listindex]=temp;
+	}
+	return listshuffle;
 
+}
+$('#shuffle').on('change',function(){
+if(document.getElementById('shuffle').checked)
+{
+	list=shuffle();
+	console.log(list)
+	$('#shuffle-btn').css({'background-color':'#9ad5d5','filter':'brightness(50%)'})
+}
+else
+{
+	$('#audio').attr('src','audio/self-love.mp3');
+	$('#audio').attr('class','0');
+	$('#play').attr('src','pause.png');
+	$('#desc > img').attr('src','image/self-love.jpg');
+	var x=$('#audio')[0];
+	x.play();
+	list=listOriginal
+	console.log(list)
+	$('#shuffle-btn').css({'background-color':'transparent','filter':'brightness(100%)'})
+
+}
+})
 
 
 function play(x)
@@ -29,12 +153,13 @@ $('#play').attr('src','play.png');}
 
 function next(){
 var c=$('#audio').attr('class');
-if(c==total)
-c=0
-$('#audio').attr('src',parseInt(c)+1+'a.mp3');
+console.log(listOriginal.indexOf(list[parseInt(c)]));
+if(c==listOriginal.length-1)
+c=-1
+$('#audio').attr('src','audio/'+list[parseInt(c)+1].img+'.mp3');
 $('#audio').attr('class',parseInt(c)+1);
 $('#play').attr('src','pause.png');
-$('#desc > img').attr('src',parseInt(c)+1+'.jpg');
+$('#desc > img').attr('src','image/'+list[parseInt(c)+1].img+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
@@ -42,12 +167,13 @@ x.play();
 
 function previous(){
 var c=$('#audio').attr('class');
-if(c=='1')
-c=parseInt(total)+1
-$('#audio').attr('src',parseInt(c)-1+'a.mp3');
+if(c=='0')
+c=listOriginal.length
+console.log(c)
+$('#audio').attr('src','audio/'+list[parseInt(c)-1].img+'.mp3');
 $('#audio').attr('class',parseInt(c)-1);
 $('#play').attr('src','pause.png');
-$('#desc > img').attr('src',parseInt(c)-1+'.jpg');
+$('#desc > img').attr('src','image/'+list[parseInt(c)-1].img+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
@@ -86,9 +212,9 @@ $(document).ready(function()
 				$('#desc > img').css('width',$(window).width()*10/100+"px");
 		}
 		var top=50;
-		for(i=1;i<=parseInt(total);i++)
+		for(i=0;i<listOriginal.length;i++)
 		{
-			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="'+i+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">'+$('#'+i).html()+'</p></div>');
+			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="image/'+list[i].img+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">Episode '+list[i].header+'<br><span style="color: pink;">'+list[i].title.toUpperCase()+'</span></p></div>');
 			top=top+250;
 	}
 	});
@@ -98,10 +224,10 @@ $(document).ready(function()
 function change(x)
 {
 	var i=parseInt(x.id);
-$('#audio').attr('src',i+'a.mp3');
+$('#audio').attr('src','audio/'+list[i].img+'.mp3');
 $('#audio').attr('class',i);
 $('#play').attr('src','pause.png');
-$('#desc > img').attr('src',i+'.jpg');
+$('#desc > img').attr('src','image/'+list[i].img+'.jpg');
 var x=$('#audio')[0];
 x.play();
 };
