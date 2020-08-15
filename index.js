@@ -93,6 +93,11 @@ const listOriginal=[
 	header:'15',
 	title:"haters",
 	img:'haters'
+},
+{
+	header:'16',
+	title:'My dear ex best friend'
+	img:'ex-best-friend'
 }
 ]
 var list=Object.assign({},listOriginal);
