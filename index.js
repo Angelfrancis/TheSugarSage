@@ -96,7 +96,7 @@ const listOriginal=[
 },
 {
 	header:'16',
-	title:'My dear ex best friend'
+	title:'My dear ex best friend',
 	img:'ex-best-friend'
 }
 ]
