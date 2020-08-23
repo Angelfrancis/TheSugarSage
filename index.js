@@ -99,6 +99,12 @@ const listOriginal=[
 	title:'My dear ex best friend',
 	img:'ex-best-friend'
 }
+,
+{
+	header:'17',
+	title:'A bad day in my life',
+	img:'bad-day'
+}
 ]
 var list=Object.assign({},listOriginal);
 var listshuffle=Object.assign({},listOriginal);
