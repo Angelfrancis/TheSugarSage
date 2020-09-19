@@ -104,6 +104,11 @@ const listOriginal=[
 	header:'17',
 	title:'A bad day in my life',
 	img:'bad-day'
+},
+{
+	header:'18',
+	title:'Suicide',
+	img:'suicide'
 }
 ]
 var list=Object.assign({},listOriginal);
@@ -226,7 +231,7 @@ $(document).ready(function()
 		for(i=0;i<listOriginal.length;i++)
 		{
 			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="image/'+list[i].img+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">Episode '+list[i].header+'<br><span style="color: pink;">'+list[i].title.toUpperCase()+'</span></p></div>');
-			top=top+250;
+			top=top+255;
 	}
 	});
 
