@@ -109,6 +109,11 @@ const listOriginal=[
 	header:'18',
 	title:'Suicide',
 	img:'suicide'
+},
+{
+	header:'19',
+	title:'Partha mudhal naale [Epi 1]',
+	img:'Partha-mudhal-naale-1'
 }
 ]
 var list=Object.assign({},listOriginal);
