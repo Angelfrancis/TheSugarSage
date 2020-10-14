@@ -119,6 +119,11 @@ const listOriginal=[
 	header:'20',
 	title:'Partha mudhal naale [Epi 2]',
 	img:'Partha-mudhal-naale-2'
+},
+{
+	header:'',
+	title:'Random Karuthu -1',
+	img:'random_karuthu_1'
 }
 ]
 var list=Object.assign({},listOriginal);
@@ -240,8 +245,8 @@ $(document).ready(function()
 		var top=50;
 		for(i=0;i<listOriginal.length;i++)
 		{
-			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="image/'+list[i].img+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">Episode '+list[i].header+'<br><span style="color: pink;">'+list[i].title.toUpperCase()+'</span></p></div>');
-			top=top+255;
+			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="image/'+list[i].img+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">'+(list[i].header==''?' ':'Episode '+list[i].header)+'<br><span style="color: pink;">'+list[i].title.toUpperCase()+'</span></p></div>');
+			top=top+250;
 	}
 	});
 
