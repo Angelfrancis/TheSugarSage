@@ -121,9 +121,14 @@ const listOriginal=[
 	img:'Partha-mudhal-naale-2'
 },
 {
-	header:'',
+	header:'21',
 	title:'Random Karuthu -1',
 	img:'random_karuthu_1'
+},
+{
+	header:'22',
+	title:'Random Karuthu -2',
+	img:'random-karuthu-2'
 }
 ]
 var list=Object.assign({},listOriginal);
