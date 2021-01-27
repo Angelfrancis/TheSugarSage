@@ -250,7 +250,7 @@ $(document).ready(function()
 		var top=50;
 		for(i=0;i<listOriginal.length;i++)
 		{
-			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="image/'+list[i].img+'.jpg" width="150"><p style="position:absolute;top:'+top+'px;" id="'+i+'" class="text">'+(list[i].header==''?' ':'Episode '+list[i].header)+'<br><span style="color: pink;">'+list[i].title.toUpperCase()+'</span></p></div>');
+			$('#list').append('<div id="'+i+'" class="listitem" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="change(this);" ><img src="image/'+list[i].img+'.jpg" width="150"><p  id="'+i+'" class="text">'+(list[i].header==''?' ':'Episode '+list[i].header)+'<br><span style="color: pink;">'+list[i].title.toUpperCase()+'</span></p></div>');
 			top=top+250;
 	}
 	});

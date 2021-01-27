@@ -57,6 +57,13 @@ audio
 	padding-bottom: 100px;
 display: none;
 }
+.listitem
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
 .text
 {
 	font-family: 'Coiny',"Comic Sans MS",Arial;
@@ -155,7 +162,8 @@ justify-content:space-around
 	height: 5px;
 	background-color: transparent;
 	box-shadow: 0 0 2px #fff, 0 0 3px #3dff71, 0 0 4px #3dff71, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71;
-align-self: center;
+-ms-grid-row-align: center;
+    align-self: center;
 border: 0px solid white;
 border-radius: 90px;
 }
