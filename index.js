@@ -207,6 +207,7 @@ else
 	$('#audio').attr('class','0');
 	$('#play').attr('src','pause.png');
 	$('#desc > img').attr('src','image/self-love.jpg');
+	$('#desc .title').text('Self love');
 	var x=$('#audio')[0];
 	x.play();
 	list=listOriginal
@@ -237,6 +238,7 @@ $('#audio').attr('src','audio/'+list[parseInt(c)+1].img+'.mp3');
 $('#audio').attr('class',parseInt(c)+1);
 $('#play').attr('src','pause.png');
 $('#desc > img').attr('src','image/'+list[parseInt(c)+1].img+'.jpg');
+$('#desc .title').text(list[parseInt(c)+1].title);
 var x=$('#audio')[0];
 x.play();
 };
@@ -251,6 +253,7 @@ $('#audio').attr('src','audio/'+list[parseInt(c)-1].img+'.mp3');
 $('#audio').attr('class',parseInt(c)-1);
 $('#play').attr('src','pause.png');
 $('#desc > img').attr('src','image/'+list[parseInt(c)-1].img+'.jpg');
+$('#desc .title').text(list[parseInt(c)-1].title);
 var x=$('#audio')[0];
 x.play();
 };
@@ -305,6 +308,7 @@ $('#audio').attr('src','audio/'+list[i].img+'.mp3');
 $('#audio').attr('class',i);
 $('#play').attr('src','pause.png');
 $('#desc > img').attr('src','image/'+list[i].img+'.jpg');
+console.log(list[i].title)
 $('#desc  .title').text(list[i].title);
 var x=$('#audio')[0];
 x.play();
