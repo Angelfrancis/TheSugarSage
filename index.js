@@ -129,7 +129,48 @@ const listOriginal=[
 	header:'22',
 	title:'Random Karuthu -2',
 	img:'random-karuthu-2'
+},
+{
+	header:'23',
+	title:'Random Karuthu -2',
+	img:'rain'
+},
+{
+	header:'24',
+	title:'Colab with @eccentric_emotions',
+	img:'death-love'
+},
+{
+	header:'25',
+	title:'Random Karuthu -4',
+	img:'self-love-2'
+},
+{
+	header:'26',
+	title:'Random Karuthu -5',
+	img:'society'
+},
+{
+	header:'27',
+	title:'Night Series (Episode-1)',
+	img:'you-are-strong'
+},
+{
+	header:'28',
+	title:'Night Series (Episode 2)',
+	img:'everything-is-okay'
+},
+{
+	header:'29',
+	title:'Night Series (Episode 3)',
+	img:'better-future'
+},
+{
+	header:'30',
+	title:'Great things',
+	img:'keep-trying'
 }
+
 ]
 var list=Object.assign({},listOriginal);
 var listshuffle=Object.assign({},listOriginal);
@@ -264,6 +305,7 @@ $('#audio').attr('src','audio/'+list[i].img+'.mp3');
 $('#audio').attr('class',i);
 $('#play').attr('src','pause.png');
 $('#desc > img').attr('src','image/'+list[i].img+'.jpg');
+$('#desc  .title').text(list[i].title);
 var x=$('#audio')[0];
 x.play();
 };
