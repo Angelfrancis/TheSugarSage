@@ -164,13 +164,19 @@ const listOriginal = [
 	},
 	{
 		header: "30",
-		title: "Great things",
+		title: "Random Karuthu - 9 (Great things)",
 		img: "keep-trying",
 	},
 	{
 		header: "31",
-		title: "Give time some time",
+		title: "Random Karuthu -10 (Give time some time)",
 		img: "problem-solved",
+	},
+	,
+	{
+		header: "31",
+		title: "Random Karuthu -11",
+		img: "never-loss-goodness",
 	},
 ];
 var list = Object.assign({}, listOriginal);
